@@ -4,5 +4,5 @@ client = MongoClient()
 
 db = client.heru_test
 
-collection_travel = db['trip']
+collection_trip = db['trip']
 colelction_user = db['user']
