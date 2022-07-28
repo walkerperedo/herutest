@@ -29,3 +29,5 @@ docker-compose build && docker-compose up
 
 This will expose the app in the port 8000
   
+## Notes
+I couldn't work with dates because the weather_api asked for a subscription for the 8 days forecast
