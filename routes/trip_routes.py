@@ -1,6 +1,4 @@
 from fastapi import APIRouter
-from config.database import collection_trip, colelction_user
-from bson import ObjectId
 from controller.trip_controller import get_one_trip, create_trip
 from models.trip_model import Trip
 
