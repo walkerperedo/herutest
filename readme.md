@@ -21,14 +21,11 @@ POST /user to create an user
 
 ## How to run this app
 
-I will dockerize this app later so it can run in any other computer.
+This app is already dockerized so the you only need docker and docker-compose installed in you computer.
 
-To run this app you need to install python3 pip3 and pipenv.
+To run this app write this command.
 
-To run this app you need to install python3 pip3 and pipenv.
+docker-compose build && docker-compose up
 
-Once you have that installed you have to run pipenv shell to create the virtual enviroment for the project.
-
-After that you have to install all the dependecies of the project with pipenv install.
-
-And finally to expose the port you run "uvicorn main:app" this will automatically will expose the port 8000.
+This will expose the app in the port 8000
+  
