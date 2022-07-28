@@ -9,9 +9,11 @@ This project has 4 main routes
 
 ## Trip
 
-GET /trip/{tripId} to get a single trip
-GET /trip/user/{userId} to get all the trips for one user
-POST /trip to post a trip
+GET /trip/{tripId} to get a single trip.
+
+GET /trip/user/{userId} to get all the trips for one user.
+
+POST /trip to post a trip.
 
 ## User
 
@@ -19,7 +21,9 @@ POST /user to create an user
 
 ## How to run this app
 
-I will dockerize this app later so it can run in any other computer
+I will dockerize this app later so it can run in any other computer.
+
+To run this app you need to install python3 pip3 and pipenv.
 
 To run this app you need to install python3 pip3 and pipenv.
 
