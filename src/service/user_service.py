@@ -1,5 +1,5 @@
-from config.database import collection_user
-from schemas.user_schema import user_serializer
+from ..config.database import collection_user
+from ..schemas.user_schema import user_serializer
 from werkzeug.security import generate_password_hash
 
 def create_user_service(user):

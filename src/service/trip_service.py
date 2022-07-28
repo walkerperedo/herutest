@@ -1,6 +1,6 @@
 from bson.objectid import ObjectId
-from config.database import collection_trip
-from schemas.trip_schema import trip_serializer, trips_serializer
+from ..config.database import collection_trip
+from ..schemas.trip_schema import trip_serializer, trips_serializer
 from fastapi import HTTPException
 import requests
 import json

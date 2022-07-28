@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from controller.trip_controller import get_one_trip, create_trip, get_trips_from_user_controller
-from models.trip_model import Trip
+from ..controller.trip_controller import get_one_trip, create_trip, get_trips_from_user_controller
+from ..models.trip_model import Trip
 
 trip_api_router = APIRouter()
 
