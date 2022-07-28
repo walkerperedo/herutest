@@ -4,8 +4,8 @@ from datetime import date
 from uuid import UUID
 
 class Trip(BaseModel):
-    departure_date: str
-    arrival_date: str
+    departure_date: date
+    arrival_date: date
     origin_name: str
     destination_name: str
     weather_arrival_city: Optional[str] = None
