@@ -1,7 +1,6 @@
 from typing import Optional
 from pydantic import BaseModel
 from datetime import date
-from uuid import UUID
 
 class Trip(BaseModel):
     departure_date: date
@@ -10,7 +9,7 @@ class Trip(BaseModel):
     destination_name: str
     weather_arrival_city: Optional[str] = None
     weather_departure_city: Optional[str] = None
-    user_id: UUID
+    user_id: str
     lat_arrival: str
     lon_arrival: str
     lat_departure: str

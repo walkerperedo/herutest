@@ -1,6 +1,6 @@
 from bson.objectid import ObjectId
 from config.database import collection_trip
-from schemas.trip_schema import trip_serializer
+from schemas.trip_schema import trip_serializer, trips_serializer
 from fastapi import HTTPException
 import requests
 import json
@@ -11,8 +11,6 @@ def get_trip_service(trip_id: str):
 
 def create_trip_service(trip):
     dicttrip = dict(trip)
-    user_id = str(dicttrip.get('user_id'))
-    dicttrip.update({"user_id": user_id})
 
     lat_arrival = dicttrip.get('lat_arrival')
     lon_arrival = dicttrip.get('lon_arrival')
@@ -41,3 +39,7 @@ def create_trip_service(trip):
     _id = collection_trip.insert_one(dicttrip).inserted_id
     saved_trip = trip_serializer(collection_trip.find_one({"_id": _id}))
     return {"status": "ok", "data": saved_trip}
+
+def get_trips_from_user_service(user_id):
+    trip = trips_serializer(collection_trip.find({"user_id": user_id}))
+    return {"status": "ok", "data": trip}

@@ -9,3 +9,6 @@ def trip_serializer(trip) -> dict:
         "weather_departure_city": trip["weather_departure_city"],
         "user_id": str(trip["user_id"])
     }
+
+def trips_serializer(trips) -> list:
+    return [trip_serializer(trip) for trip in trips]
